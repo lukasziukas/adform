@@ -70,7 +70,7 @@ BEGIN
 
         INSERT INTO orders(customer_id)
         VALUES (cust_id)
-        RETURNING order_ INTO ord_id;
+        RETURNING order_id INTO ord_id;
 
         details_count := 1 + floor(random() * 100)::int;
 
